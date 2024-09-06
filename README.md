@@ -33,7 +33,7 @@
 </a>
 
 <a href="https://codecov.io/gh/atomicgo/convert">
-<!-- unittestcount:start --><img src="https://img.shields.io/badge/Unit_Tests-33-magenta?style=flat-square" alt="Unit test count"><!-- unittestcount:end -->
+<!-- unittestcount:start --><img src="https://img.shields.io/badge/Unit_Tests-34-magenta?style=flat-square" alt="Unit test count"><!-- unittestcount:end -->
 </a>
 
 <a href="https://opensource.org/licenses/MIT" target="_blank">
@@ -118,7 +118,26 @@ func Length(value float64, from, to LengthUnit) float64
 
 Length converts a length value from one unit to another.
 
-\*\*Warning:\*\* Due to the nature of floating point arithmetic, the result may not be exact for some conversions. Do not use this package for rocket science.
+Warning: Due to the nature of floating point arithmetic, the result may not be exact for some conversions. Do not use this package for rocket science.
+
+
+
+
+
+```go
+result := Length(1, Inch, Centimeter)
+fmt.Println(result)
+
+// Output: 2.54
+```
+
+#### Output
+
+```
+2.54
+```
+
+
 
 <a name="LengthUnit"></a>
 ## type [LengthUnit](<https://github.com/atomicgo/convert/blob/main/length.go#L3>)
