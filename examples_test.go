@@ -1,17 +1,4 @@
-package template_test
-
-import (
-	"fmt"
-
-	"atomicgo.dev/template"
-)
+package convert_test
 
 func Example_demo() {
-	fmt.Println(template.HelloWorld())
-	// Output: Hello, World!
-}
-
-func ExampleHelloWorld() {
-	fmt.Println(template.HelloWorld())
-	// Output: Hello, World!
 }

@@ -4,10 +4,10 @@ repository:
   # See https://developer.github.com/v3/repos/#edit for all available settings.
 
   # A short description of the repository that will show up on GitHub
-  description: 📦 Template repository for AtomicGo repositories
+  description: 📐 Convert strings to integers, or Astronomical Units to Gigameter - we got you covered!
 
   # A comma-separated list of topics to set on the repository
-  topics: atomicgo, hacktoberfest, go, golang, golang-library
+  topics: atomicgo, hacktoberfest, go, golang, golang-library, convert, units
 
   # Either `true` to enable issues for this repository, `false` to disable them.
   has_issues: true
