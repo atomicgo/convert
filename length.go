@@ -55,7 +55,7 @@ const (
 
 // Length converts a length value from one unit to another.
 //
-// **Warning:** Due to the nature of floating point arithmetic, the result may not be exact for some conversions.
+// Warning: Due to the nature of floating point arithmetic, the result may not be exact for some conversions.
 // Do not use this package for rocket science.
 func Length(value float64, from, to LengthUnit) float64 {
 	return value * float64(from) / float64(to)
