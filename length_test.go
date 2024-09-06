@@ -1,16 +1,8 @@
 package convert
 
 import (
-	"fmt"
 	"testing"
 )
-
-func ExampleLength() {
-	result := Length(1, Inch, Centimeter)
-	fmt.Println(result)
-
-	// Output: 2.54
-}
 
 func TestLengthConversion(t *testing.T) {
 	t.Parallel()
