@@ -125,10 +125,19 @@ Warning: Due to the nature of floating point arithmetic, the result may not be e
 
 
 ```go
-result := Length(1, Inch, Centimeter)
-fmt.Println(result)
+package main
 
-// Output: 2.54
+import (
+	"fmt"
+
+	"atomicgo.dev/convert"
+)
+
+func main() {
+	result := convert.Length(1, convert.Inch, convert.Centimeter)
+	fmt.Println(result)
+
+}
 ```
 
 #### Output
