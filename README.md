@@ -110,7 +110,7 @@ func main() {
 
 
 <a name="Length"></a>
-## func [Length](<https://github.com/atomicgo/convert/blob/main/length.go#L60>)
+## func [Length](<https://github.com/atomicgo/convert/blob/main/length.go#L58>)
 
 ```go
 func Length(value float64, from, to LengthUnit) float64
@@ -149,19 +149,18 @@ func main() {
 
 
 <a name="LengthUnit"></a>
-## type [LengthUnit](<https://github.com/atomicgo/convert/blob/main/length.go#L3>)
+## type [LengthUnit](<https://github.com/atomicgo/convert/blob/main/length.go#L4>)
 
-
+LengthUnit represents a conversion factor to meters.
 
 ```go
 type LengthUnit float64
 ```
 
-<a name="Nanometer"></a>
+<a name="Nanometer"></a>Length units define conversion factors for common distance units.
 
 ```go
 const (
-    // Metric system
     Nanometer  LengthUnit = 9.999999999e-10     // Nanometer to meter conversion
     Micrometer LengthUnit = 0.000001            // Micrometer to meter conversion
     Millimeter LengthUnit = 0.001               // Millimeter to meter conversion
@@ -181,7 +180,6 @@ const (
     Femtometer LengthUnit = 9.999999999e-16     // Femtometer to meter conversion
     Attometer  LengthUnit = 1e-18               // Attometer to meter conversion
 
-    // Imperial system
     Thou         LengthUnit = 2.54e-5  // Thou (mil) to meter conversion
     Inch         LengthUnit = 0.0254   // Inch to meter conversion
     Foot         LengthUnit = 0.3048   // Foot to meter conversion
@@ -193,7 +191,6 @@ const (
     League       LengthUnit = 4828.032 // League to meter conversion (3 miles)
     NauticalMile LengthUnit = 1852     // Nautical Mile to meter conversion (international)
 
-    // Astronomical units
     AstronomicalUnit LengthUnit = 149597870691         // Astronomical Unit (AU) to meter conversion
     LightYear        LengthUnit = 9460730472580044     // Light-year to meter conversion
     Parsec           LengthUnit = 30856775812799588    // Parsec to meter conversion
@@ -201,7 +198,6 @@ const (
     Kiloparsec       LengthUnit = 30856775812799586000 // Kiloparsec to meter
     PlanckLength     LengthUnit = 1.616049999e-35      // Planck length to meter conversion
 
-    // Other units
     Angstrom   LengthUnit = 9.999999999e-11 // Angstrom to meter conversion
     Fathom     LengthUnit = 1.8288          // Fathom to meter conversion (6 feet)
     Rod        LengthUnit = 5.0292          // Rod to meter conversion (16.5 feet)
